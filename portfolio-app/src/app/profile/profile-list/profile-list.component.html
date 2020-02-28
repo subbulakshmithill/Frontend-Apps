@@ -1,0 +1,10 @@
+<img src="https://media-exp1.licdn.com/dms/image/C4D03AQF-Cl5R_UVWFw/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=bpvJutE4nb9XNeox8FSEZ_0EXzF2EpO9J-BtW6jBQAM">
+<hr>
+<div class="row">
+        <div class="col-xs-12">
+            <app-profile-item *ngFor="let profileEl of profile"
+                [profile]="profileEl"
+                (profileSelected)="onProfileSelection(profileEl)" >
+            </app-profile-item>
+        </div>
+    </div>
